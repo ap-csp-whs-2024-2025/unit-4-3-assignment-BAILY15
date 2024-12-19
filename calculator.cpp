@@ -52,21 +52,31 @@ int main()
         {
           if (user_input == 4)
           {
-            if (num2 == 0)
+
+            if (num2 == 0) (num1 == 0)
             {
               std::cout << "do not div by 0";
             }
             else
             {
-              if (user_input == 3)
-              {
-                std::cout << "Enter two numbers\n";
-                std::cin >> num1 >> num2;
-                std::cout << "The total is " << (num1 * num2) << std::endl;
-              }
-              
+            std::cout << "Enter two numbers\n";
+            std::cin >> num1 >> num2;
+            std::cout << "The total is " << (num1 / num2) << std::endl;
             }
           } 
+          else
+          {
+            if (user_input == 3)
+            {
+              std::cout << "Enter two numbers\n";
+              std::cin >> num1 >> num2;
+              std::cout << "The total is " << (num1 * num2) << std::endl;
+            }
+            else
+            {
+          
+            } // == 3
+          } // == 4
         } // == 2
       } // == 1
     } // == 0
