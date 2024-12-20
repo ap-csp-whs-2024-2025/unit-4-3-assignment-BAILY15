@@ -9,8 +9,8 @@ int main()
   std::srand(std::time(0));  // seeding our random number generator
 
   int user_input = 0;
-  int num1;
-  int num2;
+  double num1;
+  double num2;
   int numerator;
   int denominator;
   while (user_input != 99)
@@ -53,15 +53,15 @@ int main()
           if (user_input == 4)
           {
 
-            if (num2 == 0) (num1 == 0)
+            if (num2 == 0 || num1 == 0)
             {
               std::cout << "do not div by 0";
             }
             else
             {
-            std::cout << "Enter two numbers\n";
-            std::cin >> num1 >> num2;
-            std::cout << "The total is " << (num1 / num2) << std::endl;
+              std::cout << "Enter two numbers\n";
+              std::cin >> num1 >> num2;
+              std::cout << "The total is " << (num1 / num2) << std::endl;
             }
           } 
           else
@@ -74,12 +74,26 @@ int main()
             }
             else
             {
-          
+             if (user_input == 5)
+             {
+              std::cout << "Enter two numbers\n";
+              std::cin >> num1
+              if (num < 0)
+              {
+                std::cout << "Sqrt can't be negative.\n";
+              }
+              else
+              {
+                std::cout << "The ssquare root of " <<num1 << "is " << sqrt(num1) << \n;
+              }
+            
+             } // == 5
             } // == 3
           } // == 4
         } // == 2
       } // == 1
     } // == 0
   }
+
   return 0;
 }
